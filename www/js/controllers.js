@@ -41,7 +41,7 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('sharesCtrl', function($scope) {
+.controller('catalogCtrl', function($scope) {
   $scope.shares = [
     { title: '', id: 1 },
     { title: 'pidar', id: 2 },
@@ -51,6 +51,8 @@ angular.module('starter.controllers', [])
     { title: 'Cowbell', id: 6 }
   ];
 })
+  .controller('sharesCtrl',function ($scope){
 
+  })
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 });

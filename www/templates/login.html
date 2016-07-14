@@ -9,11 +9,12 @@
     <form name="LoginForm" ng-submit="doLogin()">
         <div class="list">
           <label class="item item-input">
-            <input type="text" placeholder="E-mail" ng-model="LoginData.email"
+            <input type="text" placeholder="E-mail"  ng-model="loginData.email"
                    pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
           </label>
+
           <label class="item item-input">
-            <input type="password" placeholder="Password" ng-model="LoginData.password" required>
+            <input type="password" placeholder="Password" ng-model="loginData.password" required>
           </label>
           <button class="button button-positive" type="submit" ng-disabled='LoginForm.$invalid'>
 

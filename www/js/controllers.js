@@ -10,7 +10,7 @@ angular.module('starter.controllers', [])
   //});
 
   // Form data for the login modal
-  $scope.LoginData = {
+  $scope.loginData = {
     email: "", password: ""
   };
 

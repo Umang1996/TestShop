@@ -1,4 +1,16 @@
 body {
   background-color: #6BCAE2;
+}
+#email {
+  border: groove;
+  border-radius: 10px 10px 10px 10px;
+
+}
+#password {
+  border: groove;
+  border-radius: 10px 10px 10px 10px;
+
+}
+#submit {
 
 }

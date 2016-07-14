@@ -7,20 +7,19 @@
   </ion-header-bar>
   <ion-content>
     <form name="LoginForm" ng-submit="doLogin()">
-        <div class="list">
-          <label class="item item-input">
-            <input type="text" placeholder="E-mail"  ng-model="loginData.email"
-                   pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
-          </label>
+        <div class="list" >
+          <input type="text" id ="email" placeholder="E-mail"  ng-model="loginData.email"
+                 pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
+          <br>
+            <input type="password" id="password" placeholder="Password" ng-model="loginData.password" required>
 
-          <label class="item item-input">
-            <input type="password" placeholder="Password" ng-model="loginData.password" required>
-          </label>
-          <button class="button button-positive" type="submit" ng-disabled='LoginForm.$invalid'>
+          <div class="col text-center" id="submit">
+            <button class="button button-block button-positive" type="submit" ng-disabled='LoginForm.$invalid'>
 
 
-            Submit
+            Login
           </button>
+            </div>
         </div>
 
     </form>

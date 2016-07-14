@@ -2,15 +2,24 @@ body {
   background-color: #6BCAE2;
 }
 #email {
+  margin-top:10%;
+  text-align: center;
   border: groove;
-  border-radius: 10px 10px 10px 10px;
-
+  border-radius: 15px;
+  width:75%;
+  margin-left:15%;
+  font-size:20px;
+  padding-bottom:2%;
 }
 #password {
+  padding-bottom:2%;
+  text-align: center;
   border: groove;
-  border-radius: 10px 10px 10px 10px;
-
+  border-radius: 15px;
+  width:75%;
+  margin-left:15%;
+  font-size:20px;
 }
 #submit {
-
+  margin-top:10%;
 }

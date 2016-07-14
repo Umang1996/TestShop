@@ -32,42 +32,41 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
+  .state('app.about', {
+    url: '/about',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/about.html'
       }
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
+  .state('app.catalog', {
+      url: '/catalog',
       views: {
         'menuContent': {
-          templateUrl: 'templates/browse.html'
+          templateUrl: 'templates/catalog.html'
         }
       }
     })
-    .state('app.playlists', {
-      url: '/playlists',
+    .state('app.shares', {
+      url: '/shares',
       views: {
         'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
+          templateUrl: 'templates/shares.html',
+          controller: 'sharesCtrl'
         }
       }
     })
-
-  .state('app.single', {
-    url: '/playlists/:playlistId',
+  .state('app.share', {
+    url: '/shares/:sharesId',
     views: {
       'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
+        templateUrl: 'templates/share.html',
+        controller: 'sharesCtrl'
       }
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/shares');
 });

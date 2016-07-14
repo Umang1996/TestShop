@@ -1,0 +1,9 @@
+<ion-view view-title="Share">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="allShare in shares" href="#/app/shares/{{shares.id}}">
+        {{allShare.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
